@@ -1,6 +1,6 @@
-# Code Rifters Space
+# Code Rifters Archive
 
-Welcome to the Code Rifters Space repository! This is a platform where members can contribute their project code, tasks, PDF summaries, or any other helpful resources to benefit future participants in the same phase. By sharing your work and efforts, you not only earn credit but also contribute to the growth and learning of the community. At the end of each module, outstanding contributors will receive a special gift as recognition for their valuable contributions.
+Welcome to the Code Rifters Archive repository! This is a platform where members can contribute their project code, tasks, PDF summaries, or any other helpful resources to benefit future participants in the same phase. By sharing your work and efforts, you not only earn credit but also contribute to the growth and learning of the community. At the end of each module, outstanding contributors will receive a special gift as recognition for their valuable contributions.
 
 ## Table of Contents
 1. [How to Contribute](#how-to-contribute)
