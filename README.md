@@ -11,7 +11,7 @@ Welcome to the Code Rifters Archive repository! This is a platform where members
 
 ## How to Contribute
 
-Contributing to the Code Rifters Space is easy! Just follow these steps:
+Contributing to the Code Rifters Archive is easy! Just follow these steps:
 
 1. Fork the repository to your GitHub account.
 2. Clone the forked repository to your local machine.
@@ -55,5 +55,3 @@ Let's foster a welcoming and supportive community where knowledge-sharing thrive
 This repository is licensed under the [MIT License](LICENSE). By contributing to the Code Rifters Space, you agree to grant the repository maintainers the right to use and distribute your contributions under this license.
 
 We appreciate your dedication to sharing your work and helping others. Together, we can create an invaluable resource for aspiring coders. Happy contributing!
-
-Feel free to customize and format the readme to match your preferences and requirements.
