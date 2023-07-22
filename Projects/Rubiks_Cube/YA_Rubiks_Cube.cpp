@@ -1,4 +1,5 @@
 #include <bits/stdc++.h>
+// yasmin kamal ahmed
 using namespace std;
 int main() {
     char cube[6][9],color;
