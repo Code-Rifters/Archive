@@ -1,4 +1,5 @@
 //lamoro's code
+//You can check the problem through this link: https://codeforces.com/group/U14Fnis14R/contest/459153/problem/A
 #include <bits/stdc++.h>
 #define PI 3.14159265359
 typedef long long ll;
