@@ -1,0 +1,48 @@
+//member.cPP
+#include "member.h"
+#include<iostream>
+using namespace std;
+member::member(string n,int a,int e,int l)
+{
+    name=n;
+    age=a;
+    exp=e;
+    level=l;
+    cout<<name<<" has been addded\n";
+}
+
+member::~member()
+{
+    cout<<name<<" has left the team\n";
+}
+//main.cpp
+#include <iostream>
+#include<member.h>
+using namespace std;
+
+int main()
+{
+  member m1("member 1",12,3,4);
+  member m2("member 2",10,2,5);
+}
+//member.hpp
+#ifndef MEMBER_H
+#define MEMBER_H
+#include<string>
+using namespace std;
+
+class member
+{
+private :
+    string name;
+    int age;
+    int exp;
+    int level;
+public :
+
+    member(string n,int a,int e,int l);
+       ~member();
+};
+
+#endif // MEMBER_H
+
