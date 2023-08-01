@@ -1,0 +1,19 @@
+# depslib dependency file v1.0
+1690928236 source:c:\users\me\desktop\merooo\main.cpp
+	<iostream>
+	"Team.h"
+	<string>
+
+1690927973 c:\users\me\desktop\merooo\team.h
+	<iostream>
+	<string>
+
+1690919368 c:\users\me\desktop\merooo\team.cpp
+	<iostream>
+	"Team.h"
+
+1690927973 source:c:\users\me\desktop\merooo\team.cpp
+	<iostream>
+	<string>
+	"Team.h"
+
