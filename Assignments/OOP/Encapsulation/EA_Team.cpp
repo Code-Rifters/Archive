@@ -60,23 +60,23 @@ int main()
 { string name;
 int experience;
 
-  cout<< "Enter Member1's name And Their Experiences : "<<endl;
+  cout<< "Enter Member1's name And his Experiences : "<<endl;
     cin >> name>>experience;
     Team member1(name,experience);
 
-   cout<< "Enter Member2's name And Their Experiences : "<<endl;
+   cout<< "Enter Member2's name And his Experiences : "<<endl;
     cin >> name>>experience;
     Team member2(name,experience);
 
-    cout<< "Enter Member3's name And Their Experiences : "<<endl;
+    cout<< "Enter Member3's name And his Experiences : "<<endl;
     cin >> name>>experience;
     Team member3(name,experience);
 
-    cout<< "Enter Member4's name And Their Experiences : "<<endl;
+    cout<< "Enter Member4's name And his Experiences : "<<endl;
     cin >> name>>experience;
     Team member4(name,experience);
 
-    cout <<"Average Of The Team Experience : ";
+    cout <<"The Average Of The Team Experience : ";
     member1.average(member1.exp,member2.exp,member3.exp,member4.exp);
 
     return 0;
