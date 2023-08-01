@@ -1,0 +1,24 @@
+//BankAccount.h
+#ifndef BANKACCOUNT_H
+#define BANKACCOUNT_H
+#include<string>
+#include<iostream>
+using namespace std;
+
+class BankAccount
+{
+private:
+    string accountHolderName;
+    string accountNumber;
+    double balance;
+public:
+    void deposit(double ammount);
+    void withdraw(double amount);
+    double displayBalance();
+
+    BankAccount(string name,string no,double money);
+    ~BankAccount();
+
+};
+
+#endif // BANKACCOUNT_H
