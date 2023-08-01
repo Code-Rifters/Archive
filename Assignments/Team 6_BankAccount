@@ -1,0 +1,66 @@
+//main.cpp
+#include <iostream>
+#include<BankAccount.h>
+
+using namespace std;
+
+int main()
+{
+    BankAccount b1("test","25",12000);
+    b1.deposit(1000);
+    b1.withdraw(13000);
+    cout<<b1.displayBalance();
+}
+/////////////////////////////
+//BankAccount.cpp
+#include "BankAccount.h"
+
+BankAccount::BankAccount(string name,string no,double money)
+{
+    accountHolderName=name;
+    accountNumber=no;
+    balance=money;
+}
+
+BankAccount::~BankAccount()
+{
+    //dtor
+}
+void BankAccount::deposit(double amount){
+    balance+=amount;
+}
+void BankAccount::withdraw(double amount){
+    if(balance>=amount)
+    balance-=amount;
+    else
+        cout<<"Insufficient Balance";
+}
+double BankAccount::displayBalance(){
+    return balance;
+}
+
+////////////////////////////////
+//BankAccount.h
+#ifndef BANKACCOUNT_H
+#define BANKACCOUNT_H
+#include<string>
+#include<iostream>
+using namespace std;
+
+class BankAccount
+{
+private:
+    string accountHolderName;
+    string accountNumber;
+    double balance;
+public:
+    void deposit(double ammount);
+    void withdraw(double amount);
+    double displayBalance();
+
+    BankAccount(string name,string no,double money);
+    ~BankAccount();
+
+};
+
+#endif // BANKACCOUNT_H
