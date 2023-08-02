@@ -1,0 +1,28 @@
+#include <iostream>
+uusing namespace std;
+
+int main()
+{
+
+    int countt=0,i;
+    string s;
+    bool n=true;
+    getline(cin,s);
+    for(i=0 ; i<s.size();i++)
+    {
+      if(n)
+      {
+      if(s[i]>'a'&&s[i]<'z')
+      {
+          countt++;
+          n=false;
+      }
+      }
+      if(s[i]==' ')
+      {
+          n=true;
+      }
+
+    }
+cout<<countt;
+}

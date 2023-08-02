@@ -1,0 +1,15 @@
+int main()
+{
+    int t,n,x,pow,i;
+    cin>>t;
+    while(t--)
+    {
+        cin>>x>>n;
+        pow=1;
+        for(i=0;i<n;i++)
+        {
+            pow=x*pow;
+        }
+        cout<<pow<<endl;
+    }
+}

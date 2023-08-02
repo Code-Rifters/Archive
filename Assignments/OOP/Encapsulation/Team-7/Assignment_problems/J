@@ -1,0 +1,19 @@
+#include <iostream>
+
+using namespace std;
+
+int fact(int *t,int*x)
+{
+
+   int temp;
+   temp=*x;
+   *x=*t;
+   *t=temp;
+}
+int main()
+{
+    int t,x;
+    cin>>t>>x;
+    fact(&t,&x);
+    cout<<t<<" "<<x;
+}
