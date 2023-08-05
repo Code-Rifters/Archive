@@ -1,0 +1,193 @@
+//(A)
+/*#include <iostream>
+#include <math.h>
+using namespace std;
+
+int main()
+{
+    int t,n,x,i,h;
+    cin>>t;
+    if((t>=1)&&(t<=100)){
+        for(i=0;i<t;i++){
+            cin>>n>>x;
+            h=pow(n,x);
+            cout<<h;
+        }
+    }
+    return 0;
+}*/
+//(C)
+/*#include <iostream>
+using namespace std;
+int main(){
+    int x,y,i;
+    int arr[]={1,2,3,4,5};
+    cin>>x>>y;
+    for(i=0;i<5;i++){
+        cout<<arr[i];
+    }
+    cout<<endl;
+    int arr2[6];
+    for(i=0;i<6;i++)
+    {
+        if(i<y)
+        {
+        arr2[i]=arr[i];
+        }
+        else if(i==y)
+        {
+            arr2[i]=x;
+        }
+        else if(i>y)
+        {
+            arr2[i]=arr[i-1];
+        }
+    }
+    for(i=0;i<6;i++){
+        cout<<arr2[i];
+    }
+    return 0;
+}*/
+//(D)
+/*#include <iostream>
+using namespace std;
+int i,j,temp;
+void sorting(long arr[],long n){
+    for(i=0;i<n-1;i++){
+        for(j=0;j<n-i;j++){
+            if(arr[j]>arr[j+1]){
+                temp=arr[j];
+                arr[j]=arr[j+1];
+                arr[j+1]=temp;
+            }
+        }
+    }
+}
+int main()
+{
+    long n;
+    cin>>n;
+    long arr[n];
+    for(i=0;i<n;i++){
+        cin>>arr[i];
+    }
+    sorting(arr,n);
+    for(i=0;i<n;i++){
+        cout<<arr[i];
+    }
+    return 0;
+}*/
+//(E)
+/*#include <iostream>
+#include <string>
+using namespace std;
+
+int main()
+{
+    char sen[100];
+    int c=0,i;
+    cin.getline(sen,100);
+    for(i=0;sen[i]!='\0';i++){
+        if(sen[i]==' '){
+            c++;
+        }
+    }
+    cout<<c+1;
+    return 0;
+}*/
+//(F)
+/*#include <iostream>
+#include <string>
+#include <algorithm>
+using namespace std;
+
+int main()
+{
+    char s[100];
+    int i;
+    cin.getline(s,100);
+   for(i=0;s[i]!='\0';i++){
+    s[i]=toupper(s[i]);
+   }
+   cout<<s;
+    return 0;
+}*/
+//(G)
+/*#include <iostream>
+#include <string>
+using namespace std;
+
+int main()
+{
+    char s[100];
+    int i;
+    cin.getline(s,100);
+    for(i=0;s[i]!='\0';i++){
+        if((s[i]==' ')||((s[i]>=97)&&(s[i]<=122))||((s[i]>=65)&&(s[i]<=90))){
+            cout<<s[i];
+        }
+    }
+    return 0;
+}*/
+//(H)
+/*#include <iostream>
+#include <string>
+using namespace std;
+int i,num;
+int fun(int num){
+        if((num==0)||(num==1)){
+            return 1;
+        }
+        else{
+            return num*fun(num-1);
+        }
+    }
+int main()
+{
+    int n;
+    cin>>n;
+    for(i=0;i<n;i++){
+        cin>>num;
+        cout<< fun(num)<<endl;
+    }
+    return 0;
+}*/
+//(I)
+/*#include <iostream>
+#include <string>
+using namespace std;
+int fib(int num){
+    if((num==0)||(num==1)){
+        return num;
+    }
+    else{
+        return (fib(num-1)+fib(num-2));
+    }
+}
+int main(){
+    int n,i,num;
+    cin>>n;
+    for(i=0;i<n;i++){
+        cin>>num;
+        fib(num);
+        cout<<fib(num)<<endl;
+    }
+return 0;
+}*/
+//(J)
+/*#include <iostream>
+#include <string>
+using namespace std;
+int temp;
+void swaping(int *x,int* y){
+    temp=*x;
+    *x=*y;
+    *y=temp;
+}
+int main(){
+    int x,y;
+    cin>>x>>y;
+    swaping(&x,&y);
+    cout<<x<<' '<<y;
+return 0;
+}*/
