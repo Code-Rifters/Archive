@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1690996351 source:c:\users\lenovo\documents\oop\banktask\main.cpp
+	<bits/stdc++.h>
+	"BankAccount.h"
+
+1690996393 c:\users\lenovo\documents\oop\banktask\include\bankaccount.h
+	<bits/stdc++.h>
+
+1690996414 source:c:\users\lenovo\documents\oop\banktask\src\bankaccount.cpp
+	"BankAccount.h"
+

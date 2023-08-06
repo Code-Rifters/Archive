@@ -1,0 +1,28 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int arr[6]={1,2,3,4,5},x,y,i,countt=0,temp;
+    cin>>x>>y;
+//shift right
+   int n=6;
+   for(i=0;i<5;i++)
+    {
+     cout<<arr[i];
+
+    }
+    cout<<endl;
+    for ( i = n-2; i >= y; i--) {
+        arr[i+1] = arr[i];
+    }
+    arr[y] = x;
+
+    for(i=0;i<6;i++)
+    {
+     cout<<arr[i];
+
+    }
+
+}

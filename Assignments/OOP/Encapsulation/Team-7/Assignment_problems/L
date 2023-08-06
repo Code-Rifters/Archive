@@ -1,0 +1,31 @@
+#include <iostream>
+
+using namespace std;
+
+int func (int x,int y)
+{
+     if(y==1)
+        return 1;
+  else if(x%y==0)
+   {
+       return 0;
+   }
+
+    else{return func(x,y-1);}
+}
+int main()
+{
+    int x,t,i;
+    cin>>t;
+for(i=2;i<t;i++)
+
+{
+     int u=func(i,i-1);
+     if (u==1)
+   {
+      cout<<i<<" ";
+   }
+}
+
+
+}

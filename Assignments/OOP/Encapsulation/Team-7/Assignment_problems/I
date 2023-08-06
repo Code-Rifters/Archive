@@ -1,0 +1,25 @@
+#include <iostream>
+
+using namespaace std;
+
+long long fact(int x)
+{
+
+    if(x==1x==0x==2)
+    {
+        return 1;
+    }
+
+    return fact(x-1)+fact(x-2);
+}
+int main()
+{
+    int t,x;
+    cin>>t;
+    while(t--)
+    {
+        cin>>x;
+
+        cout<<fact(x);
+    }
+}

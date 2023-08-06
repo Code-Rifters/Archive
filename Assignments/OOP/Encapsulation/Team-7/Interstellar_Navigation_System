@@ -1,0 +1,128 @@
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+class CelestialBody {
+private:
+    string name;
+    int x, y, z;
+    int gravity;
+
+public:
+    CelestialBody(int xx, int yy, int zz, int g, string ns) {
+        name = ns;
+        x = xx;
+        y = yy;
+        z = zz;
+        gravity = g;
+    }
+
+    int getX() {
+        return x;
+    }
+
+    int getY() {
+        return y;
+    }
+
+    int getZ() {
+        return z;
+    }
+
+    string getName() {
+        return name;
+    }
+
+    int getGravity() {
+        return gravity;
+    }
+};
+
+class Spaceship {
+private:
+    string name;
+    int x, y, z;
+    int speed, distance, time, force;
+
+public:
+    void setName(string na) {
+        name = na;
+    }
+
+    void setSpeed(int sp) {
+        speed = sp;
+    }
+
+    void setX(int xx) {
+        x = xx;
+    }
+
+    void setY(int yy) {
+        y = yy;
+    }
+
+    void setZ(int zz) {
+        z = zz;
+    }
+
+    int getX() {
+        return x;
+    }
+
+    int getY() {
+        return y;
+    }
+
+    int getZ() {
+        return z;
+    }
+
+    string getName() {
+        return name;
+    }
+
+    double getSpeed() {
+        return speed;
+    }
+
+    double getTime(double distance) {
+        time = distance / speed;
+        return time * 1000;
+    }
+
+    double getDistance(CelestialBody celestialBody) {
+        int celX = celestialBody.getX();
+        int celY = celestialBody.getY();
+        int celZ = celestialBody.getZ();
+
+        distance = sqrt(pow((x - celX), 2) + pow((y - celY), 2) + pow((z - celZ), 2));
+        return distance;
+    }
+
+    double getForce(CelestialBody celestialBody) {
+        int gravity = celestialBody.getGravity();
+        force = (gravity * 1000000000) / pow(distance, 2);
+        return force;
+    }
+};
+
+int main() {
+    CelestialBody celestial(10, 20, 30, 9, "Celestial");
+    Spaceship spaceship;
+
+    spaceship.setName("SpaceShip");
+    spaceship.setX(5);
+    spaceship.setY(10);
+    spaceship.setZ(15);
+    spaceship.setSpeed(100);
+
+    double distance = spaceship.getDistance(celestial);
+    double time = spaceship.getTime(distance);
+    double Force = spaceship.getForce(celestial);
+
+    cout << "Distance: " << distance << endl;
+    cout << "Time: " << time << endl;
+    cout << "Gravity Force: " << Force << endl;
+
+    return 0;
+}
